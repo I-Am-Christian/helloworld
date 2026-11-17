@@ -1,4 +1,4 @@
-# Hello World
+# linguistico
 
 An original English-teaching resource website built specifically for this repository. The design uses muted plum, lavender, warm beige, grey, and a lime accent.
 
