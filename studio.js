@@ -159,3 +159,18 @@ $('#quick-lesson').onclick = () => {
 render();
 const requested = new URLSearchParams(location.search).get('lesson');
 if (requested) teachLesson(requested);
+
+const siteHeader = document.querySelector('body > header');
+let previousScroll = Math.max(0, window.scrollY);
+
+window.addEventListener('scroll', () => {
+  const currentScroll = Math.max(0, window.scrollY);
+  if (currentScroll <= siteHeader.offsetHeight) {
+    siteHeader.classList.remove('header-hidden');
+  } else if (Math.abs(currentScroll - previousScroll) >= 6) {
+    siteHeader.classList.toggle('header-hidden', currentScroll > previousScroll);
+  } else {
+    return;
+  }
+  previousScroll = currentScroll;
+}, {passive: true});

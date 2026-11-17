@@ -53,3 +53,14 @@
 @media (min-width: 1180px) {
   .tutor-note { position: absolute; top: 48px; right: calc(100% + 32px); margin: 0; transform: rotate(-4deg); }
 }
+
+body:has(.hero) > header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: transform 180ms ease;
+}
+body:has(.hero) > header.header-hidden:not(:focus-within):not(:has(nav.open)) {
+  transform: translateY(-101%);
+}
+#library { scroll-margin-top: 100px; }
