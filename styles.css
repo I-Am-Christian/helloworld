@@ -17,8 +17,10 @@
 .card-foot a{font-size:11px;font-weight:500}
 
 .tutor-strip {
-  padding: 10px 4.5% 13px;
-  background: #f7f4ed;
+  max-width: 570px;
+  margin: 24px auto 0;
+  color: var(--ink);
+  text-align: left;
 }
 .tutor-note {
   position: relative;
@@ -48,13 +50,14 @@
 .tutor-photo { flex: none; }
 .tutor-photo img { display: block; border-radius: 6px; object-fit: cover; }
 .tutor-note p { margin: 0; line-height: 1.55; }
-.tutor-intro { flex: 1 1 240px; }
+.tutor-intro { flex: 1 1 220px; }
+.tutor-credentials { flex: 1 1 245px; }
 .tutor-intro span, .tutor-credentials { font-size: 11px; color: #5e5362; }
 .tutor-quote { font: italic 14px Georgia, serif; color: #574666; }
 .tutor-booking { display: grid; justify-items: start; gap: 4px; }
 .tutor-price { font-size: 10px; line-height: 1.4; color: #5e5362; }
 @media (max-width: 600px) {
   .tutor-note { column-gap: 12px; }
-  .tutor-intro { flex-basis: 60%; }
+  .tutor-intro { flex-basis: 65%; }
   .tutor-credentials { flex-basis: 100%; }
 }
