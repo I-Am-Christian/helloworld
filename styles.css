@@ -15,3 +15,46 @@
 @media(max-width:600px){.filter-extra .button{margin-left:0} .filter-extra label{flex:1 1 140px}}
 @media print{body>main.lesson-page{display:block!important}.lesson-page .actions{display:none!important}}
 .card-foot a{font-size:11px;font-weight:500}
+
+.tutor-strip {
+  padding: 10px 4.5% 13px;
+  background: #f7f4ed;
+}
+.tutor-note {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 20px;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 11px 16px;
+  border: 1px solid #ddd1b9;
+  border-radius: 4px 4px 11px 4px;
+  background: #f2e8d4;
+  box-shadow: 0 2px 4px #44344f14;
+}
+.tutor-note::before {
+  position: absolute;
+  top: -5px;
+  left: 24px;
+  width: 48px;
+  height: 9px;
+  background: #d6c5dfc9;
+  transform: rotate(-5deg);
+  content: '';
+  pointer-events: none;
+}
+.tutor-photo { flex: none; }
+.tutor-photo img { display: block; border-radius: 6px; object-fit: cover; }
+.tutor-note p { margin: 0; line-height: 1.55; }
+.tutor-intro { flex: 1 1 240px; }
+.tutor-intro span, .tutor-credentials { font-size: 11px; color: #5e5362; }
+.tutor-quote { font: italic 14px Georgia, serif; color: #574666; }
+.tutor-booking { display: grid; justify-items: start; gap: 4px; }
+.tutor-price { font-size: 10px; line-height: 1.4; color: #5e5362; }
+@media (max-width: 600px) {
+  .tutor-note { column-gap: 12px; }
+  .tutor-intro { flex-basis: 60%; }
+  .tutor-credentials { flex-basis: 100%; }
+}
