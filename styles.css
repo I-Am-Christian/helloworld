@@ -168,3 +168,46 @@ body:has(.hero) > header.header-hidden:not(:focus-within):not(:has(nav.open)) {
   .sound-art { left: -50px; opacity: .35; }
   .hero-overlay { background: linear-gradient(90deg,#66577655,#665776db 25%,#665776db 75%,#66577655); }
 }
+
+/* Material-inspired colours give each teaching area a distinct identity. */
+.backdrop-collage {
+  background:
+    radial-gradient(ellipse at 88% 14%, #768f765c, transparent 44%),
+    radial-gradient(ellipse at 8% 80%, #a47a5550, transparent 48%),
+    linear-gradient(125deg, #343b39, #665776 48%, #454a43);
+}
+.hero-overlay { background: linear-gradient(90deg,transparent,#5d526def 31%,#5d526df0 66%,transparent); }
+.hero { background: #5d526d; }
+.conversation-art span { background: #d9ded8; color: #344b43; }
+.conversation-art span + span { background: #d0b495; color: #564234; }
+.notebook-art { border-left-color:#70594a; background:repeating-linear-gradient(0deg,#d0b99d 0 27px,#8d72554d 28px 29px);color:#4d3d33; }
+.travel-art { border-color:#d5d7d1; background:#a7b3b0; }
+.travel-hills { background:#35594d;box-shadow:140px -15px 0 #839778; }
+.word-art { background:#515e54;color:#e5e7d7; }
+.sound-art i { background:#b8c1b8; }
+.sound-art i:nth-child(2n) { background:#b7d19e; }
+.ribbon { background:#dedfd9; }
+.library { background:radial-gradient(ellipse at 95% 0%,#bec9be55,transparent 50%),#f0f0e9; }
+.plum { background:#b9acc9;color:#43364f; }
+.sand { background:#c6aa88;color:#49392e; }
+.sage { background:#759482;color:#f5f3e7; }
+.slate { background:#59636b;color:#f1eee6; }
+.rose { background:#ad8e7a;color:#fff7e9; }
+.lilac { background:#777b70;color:#fcf6e6; }
+.creator { background:radial-gradient(ellipse at 15% 50%,#c6b49c66,transparent 65%),#e8e3d9; }
+.paper-back { background:#7e9886; }
+.sticker { background:#cbdc9e; }
+.tool-section { background:linear-gradient(155deg,#d9dfd7,#e7e7e0 70%); }
+.tool-grid button:first-child { background:#4c5753;color:#f5f0e5;border-color:#4c5753; }
+.tool-grid button:first-child p,.tool-grid button:first-child .tool-number { color:#d2dbd1; }
+.tool-grid button:first-child .tool-symbol { color:#d1e4ae; }
+.tool-grid button:nth-child(2) { background:#bfa78c;border-color:#b29a80; }
+.tool-grid button:nth-child(2) p,.tool-grid button:nth-child(2) .tool-number { color:#544536; }
+.tool-grid button:nth-child(2) .tool-symbol { color:#67503b; }
+.tool-grid button:nth-child(3) { background:#d3c8dc;border-color:#c6b8d0; }
+.faq { background:#efeee8; }
+.closing { background:radial-gradient(ellipse at 8% 95%,#8b745450,transparent 60%),linear-gradient(115deg,#2f423b,#46414d); }
+footer { background:#d9dcd5; }
+@media(max-width:850px) {
+  .hero-overlay { background:linear-gradient(90deg,#5d526d66,#5d526de8 25%,#5d526de8 75%,#5d526d66); }
+}
